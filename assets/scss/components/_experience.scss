@@ -8,10 +8,10 @@
         position: relative;
         @include avoid-break;
         &:not(:first-child) {
-            padding-top: 1.5rem;
+            padding-top: 1rem;
         }
-        margin-bottom: 10px;
-        margin-top: 10px;
+        margin-bottom: 1px;
+        margin-top: 2px;
 
         &::before {
             content: "";
@@ -20,7 +20,7 @@
             position: absolute;
             background: linear-gradient($color-page-background, rgba(255, 255, 255, 0));
             //background: linear-gradient(blue, red);
-            margin-top: 25px;
+            margin-top: 15px;
         }
     }
 
