@@ -1,0 +1,14 @@
+{{ if .College }}
+<div class="sideSection">
+    <div class="sideSection__heading">
+        <h2 class="sideSection__title">{{ "education" }}</h2>
+    </div>
+    <div class="sideSection__content">
+        <ul>
+            {{ range .College }}
+            <li>{{ . | safeHTML }}</li>
+            {{ end }}
+        </ul>
+    </div>
+</div>
+{{ end }}
