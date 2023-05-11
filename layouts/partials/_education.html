@@ -2,7 +2,7 @@
 <div id="education" class="section">
     <div class="section__heading">
         <h2 class="section__title">
-            {{ i18n "education" }}
+            {{ "Projects" }}
         </h2>
     </div>
     <div class="section__content">
@@ -13,6 +13,7 @@
                 <h4 class="education__date">{{ .Date | safeHTML }}</h4>
                 <div class="education__description">{{ .Details | safeHTML }}</div>
             </div>
+        <div class="experience__item {{ .Class }}"></div>
         {{ end }}
     </div>
 </div>
